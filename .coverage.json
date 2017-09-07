@@ -1,0 +1,17 @@
+{
+  "include": [
+      "**/packages/gridfs/package.js"
+  ],
+  "exclude": {
+      "general": [],
+      "server": [
+      "**/node_modules/**/*.json"
+      ],
+      "client": [
+      "**/client/stylesheets/**",
+      "**/.npm/package/node_modules/**"
+      ]
+  },
+  "remapFormat": ["html", "cobertura", "clover", "json", "json-summary", "lcovonly", "teamcity", "text", "text-summary"],
+  "output": "./.coverage"
+}
