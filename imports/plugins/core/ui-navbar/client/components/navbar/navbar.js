@@ -1,6 +1,7 @@
 import { FlatButton } from "/imports/plugins/core/ui/client/components";
 import { Reaction } from "/client/api";
 import { Tags } from "/lib/collections";
+import { quickTour } from "/imports/plugins/included/tour/quickTour";
 
 Template.CoreNavigationBar.onCreated(function () {
   this.state = new ReactiveDict();
@@ -69,6 +70,17 @@ Template.CoreNavigationBar.helpers({
       onToggleMenu(callback) {
         // Register the callback
         instance.toggleMenuCallback = callback;
+      }
+    };
+  },
+  WalkThroughButtonComponent() {
+    return {
+      component: FlatButton,
+      icon: "fa fa-plane",
+      kind: "flat",
+      label: "Quick Tour",
+      onClick() {
+        quickTour();
       }
     };
   }
