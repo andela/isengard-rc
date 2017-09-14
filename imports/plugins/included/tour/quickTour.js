@@ -42,7 +42,6 @@ const tourSteps = [
     </div>`
   },
   {
-    element: ".product-grid",
     intro: `<h2 class="text-center">Products</h2>
     <hr>
     <div class="tourcontainer">
