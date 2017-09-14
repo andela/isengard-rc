@@ -24,6 +24,9 @@ Template.CoreNavigationBar.events({
     }, $("body").get(0));
     $("body").css("overflow", "hidden");
     $("#search-input").focus();
+  },
+  "click .walkthrough": function () {
+    quickTour();
   }
 });
 
@@ -78,10 +81,7 @@ Template.CoreNavigationBar.helpers({
       component: FlatButton,
       icon: "fa fa-plane",
       kind: "flat",
-      label: "Quick Tour",
-      onClick() {
-        quickTour();
-      }
+      label: "Quick Tour"
     };
   }
 });
