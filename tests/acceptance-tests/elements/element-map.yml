@@ -94,3 +94,8 @@ search_icon: "[class='search search-icon']"
 
 # order confirmation page
 thank_you_txt: "h3 > span"
+
+#tour
+quick_tour: "[class='rui font-icon fa fa-plane']"
+quick_tour_next: "[class='introjs-button introjs-nextbutton']"
+quick_tour_done: "[class='introjs-button introjs-skipbutton introjs-donebutton']"
