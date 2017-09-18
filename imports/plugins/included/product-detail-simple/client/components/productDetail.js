@@ -12,7 +12,10 @@ import {
   AddToCartButton,
   ProductMetadata,
   ProductTags,
-  ProductField
+  ProductField,
+  SubmitReviewContainer,
+  ShareOnSocial,
+  ProductReviewsContainer
 } from "./";
 import { AlertContainer } from "/imports/plugins/core/ui/client/containers";
 import { PublishContainer } from "/imports/plugins/core/revisions";
@@ -175,9 +178,12 @@ class ProductDetail extends Component {
                   onCartQuantityChange={this.props.onCartQuantityChange}
                   onClick={this.props.onAddToCart}
                 />
+                <ShareOnSocial product={this.product} { ...this.props }/>
               </div>
             </div>
           </div>
+          <ProductReviewsContainer { ...this.props }/>
+          <SubmitReviewContainer { ...this.props}/>
         </div>
       </div>
     );
