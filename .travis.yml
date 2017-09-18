@@ -1,0 +1,28 @@
+language: node_js
+sudo: required
+cache:
+  directories:
+  - "~/.meteor"
+  - "~/docker"
+
+before_install:
+  - hash meteor 2>/dev/null || curl https://install.meteor.com | /bin/sh
+
+install:
+  - mkdir $HOME/reaction
+  - cd $HOME/reaction
+  - .reaction/scripts/clone-packages.sh
+  - .reaction/docker/scripts/plugin-loader.sh
+
+script: 
+  - cd $HOME/reaction
+  - meteor npm install
+  - SERVER_TEST_REPORTER="dot" meteor test --once --full-app --headless --driver-package dispatch:mocha
+  - .reaction/docker/scripts/ci-build.sh
+
+services:
+  - docker
+
+node_js:
+  - node
+  - '4.6.0'
