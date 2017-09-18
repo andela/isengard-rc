@@ -1,6 +1,7 @@
 import { FlatButton } from "/imports/plugins/core/ui/client/components";
 import { Reaction } from "/client/api";
 import { Tags } from "/lib/collections";
+import { quickTour } from "/imports/plugins/included/tour/quickTour";
 
 Template.CoreNavigationBar.onCreated(function () {
   this.state = new ReactiveDict();
@@ -23,6 +24,9 @@ Template.CoreNavigationBar.events({
     }, $("body").get(0));
     $("body").css("overflow", "hidden");
     $("#search-input").focus();
+  },
+  "click .walkthrough": function () {
+    quickTour();
   }
 });
 
@@ -70,6 +74,14 @@ Template.CoreNavigationBar.helpers({
         // Register the callback
         instance.toggleMenuCallback = callback;
       }
+    };
+  },
+  WalkThroughButtonComponent() {
+    return {
+      component: FlatButton,
+      icon: "fa fa-plane",
+      kind: "flat",
+      label: "Quick Tour"
     };
   }
 });
