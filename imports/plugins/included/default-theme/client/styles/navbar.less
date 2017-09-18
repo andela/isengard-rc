@@ -215,7 +215,7 @@
   .left(auto);
 }
 
-.rui.navbar .search {
+.rui.navbar .search, .walkthrough {
   .display(flex);
   .align-items(center);
   .flex(0 0 auto);
@@ -224,11 +224,50 @@
   cursor: pointer;
 }
 
-.rui.navbar .search:hover {
+.rui.navbar .search:hover, .walkthrough:hover {
   background-color: @navbar-default-toggle-icon-bar-bg;
   border-color: @navbar-default-toggle-border-color;
 }
 
 .rui.navbar .search:hover button {
   outline: none;
+}
+
+.rui.navbar .walkthrough {
+  margin-left: 10px;
+  margin-right: 11px;
+}
+
+button.btn.btn-default.rui.button.flat {
+  margin-left: 18px !important;
+}
+
+div.walkthrough {
+  width: 110px;
+  padding: 0 25px 0 25px;
+}
+
+.fa-plane {
+  padding-right: 5px;
+}
+
+.tourcontainer {
+  line-height: 20px;
+  font-family: inherit;
+}
+
+.introjs-showElement {
+  background-color: #1f7526;
+}
+
+.rui.font-icon.fa.fa-search {
+  padding-right: 16px;
+}
+
+div.search {
+  padding: 0 !important;
+}
+
+span.introjs-helperNumberLayer {
+  top: 4px;
 }
