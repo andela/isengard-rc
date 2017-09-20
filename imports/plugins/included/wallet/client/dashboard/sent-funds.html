@@ -1,0 +1,26 @@
+<template name="sent">
+  <row>
+    <div class="col-md-12 wallet">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>To</th>
+            <th>Transaction id</th>
+            <th>Amout</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each transaction in this.transactions.sent }} 
+            <tr>
+              <td>{{ transaction.to }}</td>
+              <td>{{ transaction.transactionId }}</td>
+              <td>{{ formatPrice transaction.amount }}</td>
+              <td>{{ dateFormat transaction.date }}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </row>
+</template>

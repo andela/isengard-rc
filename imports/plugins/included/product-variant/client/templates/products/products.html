@@ -2,7 +2,7 @@
 
   {{#if ready}}
     {{>productGrid products=products}}
-
+    {{>socialFeed }}
     {{#if loadMoreProducts}}
       <div class="product-load-more" id="productScrollLimitLoader">
           <button
@@ -32,5 +32,23 @@
     {{#if hasPermission "createProduct"}}
       {{>productList}}
     {{/if}}
+  </div>
+</template>
+
+
+<template name="socialFeed">
+  <div class="container-main">
+    <div class="row">
+      {{#if facebook }}
+      <div class="col-xs-12 col-md-6">
+             <iframe src={{facebook}} width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+      {{/if}}
+      {{#if twitter }}
+        <div class="col-xs-12 col-md-6">
+          <a class="twitter-timeline" href={{twitter}}>Tweets by Isengard RC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      {{/if}}
+    </div>
   </div>
 </template>
