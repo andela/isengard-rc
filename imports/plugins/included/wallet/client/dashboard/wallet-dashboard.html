@@ -1,0 +1,20 @@
+
+<template name="walletDashboard">
+  <div class="container">
+    <h1 class="dashboard-wallet-balance">My Wallet Balance ( {{ formatPrice usersWallet.balance }})</h1>
+    <div class="row">
+      <div class="wallet-header">
+        <ul class="nav nav-tabs nav-justified">
+          <li data-template="home" role="presentation" class="active"><a href="#">Overview</a></li>
+          <li data-template="sent" role="presentation"><a href="#">Debit History</a></li>
+          <li data-template="received" role="presentation"><a href="#">Credit History</a></li>
+          <li data-template="transfer" role="presentation"><a href="#">Transfer funds</a></li>
+          <li data-template="fund" role="presentation"><a href="#">Fund wallet</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wallet-body">
+      {{> UI.dynamic template=showTemplate  data=usersWallet }}
+    </div>
+  </div>
+</template> 

@@ -94,8 +94,10 @@ practicalmeteor:sinon
 
 
 # Custom Packages
+nimble:restivus
 abernix:standard-minifier-js
 facebook-config-ui
 google-config-ui
 twitter-config-ui
 dynamic-import
+
