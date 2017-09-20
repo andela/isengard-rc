@@ -73,7 +73,7 @@
     "react-onclickoutside": "^5.7.1",
     "react-share": "^1.16.0",
     "react-simple-di": "^1.2.0",
-    "react-social": "^1.9.0",
+    "react-social": "^1.10.0",
     "react-star-rating": "^1.4.2",
     "react-stars": "^2.2.3",
     "react-taco-table": "^0.5.0",
@@ -119,3 +119,4 @@
     "test-browserstack": "wdio tests/runner/browserstack.conf.js; kill $(ps aux | grep '[b]rowserstack' | awk '{print $2}')"
   }
 }
+
