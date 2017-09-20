@@ -40,3 +40,5 @@ imports/plugins/custom/*
 
 .reaction/config.json
 package-lock.json
+selenium-server-standalone-2.53.1.jar
+

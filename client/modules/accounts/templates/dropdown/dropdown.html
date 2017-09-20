@@ -45,6 +45,7 @@
         </a>
       </li>
     {{/each}}
+    {{> walletMenu}}
   </ul>
 </template>
 
@@ -86,4 +87,14 @@
       
     </div>
   </div>
+</template>
+<template name="walletMenu">
+  <li id="wallet-menu" class="dropdown-apps-icon">
+    <a href={{pathFor 'wallet'}} title="my wallet in dropdown menu">
+      <i class="fa fa-google-wallet"></i>
+      <span class="icon-text">
+        My wallet
+      </span>
+    </a>
+  </li>
 </template>
