@@ -89,6 +89,7 @@ stripe_exp_month: "//form[@id='stripe-payment-form']/div[2]/div/select"
 stripe_exp_year: "//form[@id='stripe-payment-form']/div[2]/div[2]/select"
 stripe_cvv: "//form[@id='stripe-payment-form']/div[3]/div/input"
 stripe_complete_order_btn: "//form[@id='stripe-payment-form']/button"
+shop_for_producct: ".product-image"
 
 # order confirmation page
 thank_you_txt: "h3 > span"

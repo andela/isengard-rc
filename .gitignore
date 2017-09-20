@@ -39,3 +39,6 @@ imports/plugins/custom/*
 !imports/plugins/custom/.gitkeep
 
 .reaction/config.json
+selenium-server-standalone-3.5.3.jar
+selenium-server-standalone-3.4.0.jar
+.env
