@@ -33,3 +33,4 @@ describe("Real Time Search", function () {
     expect(browser.getText("div.overlay-title")).to.contain("BASIC REACTION PRODUCT");
   });
 });
+
