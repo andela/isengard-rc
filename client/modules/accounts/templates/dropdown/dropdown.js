@@ -34,6 +34,7 @@ Template.loginDropdown.events({
   },
 
   /**
+   *
    * Submit sign up form
    * @param  {Event} event - jQuery Event
    * @param  {Template} template - Blaze Template
