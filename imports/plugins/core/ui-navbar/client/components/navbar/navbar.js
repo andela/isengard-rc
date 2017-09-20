@@ -85,3 +85,4 @@ Template.CoreNavigationBar.helpers({
     };
   }
 });
+
