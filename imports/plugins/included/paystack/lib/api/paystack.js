@@ -10,8 +10,9 @@ const paystackHeaders = (secret) => {
 };
 
 Paystack.verify = (reference, secret, cb) => {
+  const refId = JSON.parse(reference).reference;
   const headers = paystackHeaders(secret);
-  const url = `https://api.paystack.co/transaction/verify/${reference}`;
+  const url = `https://api.paystack.co/transaction/verify/${refId}`;
   request.get(url, { headers }, (err, response, body) =>  {
     const res = JSON.parse(body);
     if (res.status) {
