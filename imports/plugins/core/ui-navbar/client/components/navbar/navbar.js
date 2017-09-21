@@ -41,7 +41,7 @@ Template.CoreNavigationBar.helpers({
       //   }, $("body").get(0));
       //   $("body").css("overflow-y", "hidden");
       //   $("#search-input").focus();
-      // }
+      // } 
     };
   },
   onMenuButtonClick() {
