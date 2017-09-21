@@ -94,6 +94,8 @@ practicalmeteor:sinon
 
 
 # Custom Packages
+themeteorchef:commonmark
+templating-tools@1.1.2
 nimble:restivus
 abernix:standard-minifier-js
 facebook-config-ui

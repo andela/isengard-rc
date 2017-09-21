@@ -41,7 +41,7 @@ Template.CoreNavigationBar.helpers({
       //   }, $("body").get(0));
       //   $("body").css("overflow-y", "hidden");
       //   $("#search-input").focus();
-      // }
+      // } 
     };
   },
   onMenuButtonClick() {
@@ -74,6 +74,14 @@ Template.CoreNavigationBar.helpers({
         // Register the callback
         instance.toggleMenuCallback = callback;
       }
+    };
+  },
+
+  staticPagesMenu() {
+    return {
+      component: FlatButton,
+      kind: "flat",
+      label: "Pages"
     };
   },
   WalkThroughButtonComponent() {
