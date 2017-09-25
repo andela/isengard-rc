@@ -94,6 +94,8 @@ practicalmeteor:sinon
 
 
 # Custom Packages
+simple:rest
+email
 nimble:restivus
 abernix:standard-minifier-js
 facebook-config-ui
