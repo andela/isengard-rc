@@ -1,3 +1,6 @@
 login_dropdown: Sign In
 login_email_fld_id: email
 login_pw_fld_id: password
+cardnumber_id: cardnumber
+expiry_id: expiry
+cvv_id: cvv
