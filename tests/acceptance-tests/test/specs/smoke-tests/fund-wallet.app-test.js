@@ -12,8 +12,8 @@ beforeEach(function () {
   browser.url(baseUrl);
 });
 
-describe("simple login test", function () {
-  it("verify user is able to login - and verifies user name in dropdown", function () {
+describe("fund wallet test", function () {
+  it("verifies a user is able to signup, navigate to wallet dashboard and fund wallet", function () {
     const eleMap = yaml.safeLoad(fs.readFileSync("./tests/acceptance-tests/elements/element-map.yml", "utf8"));
     const eleIds = yaml.safeLoad(fs.readFileSync("./tests/acceptance-tests/elements/element-ids.yml", "utf8"));
     const usrData = yaml.safeLoad(fs.readFileSync("./tests/acceptance-tests/config/user-data.yml", "utf8"));
