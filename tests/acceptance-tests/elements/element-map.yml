@@ -9,6 +9,8 @@ pl_password_fld: "//div[2]/div/div/div/form/div[2]/input"
 pl_register_lnk: "//div[2]/div/div/div/form/div[4]/a[2]"
 pl_register_btn: "//button[@type='Submit']"
 
+admin_user: 
+
 # dashoard locators
 dashboard_btn: "span.icon > i.icon-reaction-logo"
 dashboard_hdr_txt: "h3.nav-dashboard-title > span"
@@ -90,11 +92,15 @@ stripe_exp_year: "//form[@id='stripe-payment-form']/div[2]/div[2]/select"
 stripe_cvv: "//form[@id='stripe-payment-form']/div[3]/div/input"
 stripe_complete_order_btn: "//form[@id='stripe-payment-form']/button"
 shop_for_producct: ".product-image"
+payer_name: "Victor"
+payer_cardNumber: "5370101993616751"
+cvv: "409"
 
 search_icon: "[class='search search-icon']"
 
 # order confirmation page
 thank_you_txt: "h3 > span"
+confirm_cancel_order: "(//button[@class='swal2-confirm swal2-styled'])"
 
 #tour
 quick_tour: "[class='rui font-icon fa fa-plane']"
