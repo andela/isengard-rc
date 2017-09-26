@@ -54,7 +54,7 @@ class SubmitReviewContainer extends Component {
           <div className="col-12 col-md-8">
             <div className="row">
               <div>Rate this product</div>
-              <div className="col">
+              <div className="col" id="reviewStars">
               <ReactStars name="react-stars"  value={this.state.rating} size={24}
                 onChange={this.ratingChanged} count={5}
               />

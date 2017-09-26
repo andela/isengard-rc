@@ -12,7 +12,7 @@ const userReview = (review, index) => {
       <div className="col">
         <ReactStars name="react-stars"  edit={false} size={15} value={review.stars} count={5} />
       </div>
-      <div>{review.comment}</div>
+      <div className="comment">{review.comment}</div>
     </div>
   );
 };

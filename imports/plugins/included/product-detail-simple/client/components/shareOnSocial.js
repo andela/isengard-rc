@@ -11,13 +11,13 @@ class ShareOnSocial extends Component {
         <div className="row text-center">
           <div>
             <FacebookButton element={"i"} url={url} appId={127579111312725}>
-              <a className="btn btn-block btn-primary">
+              <a className="btn btn-block btn-primary" id="facebookShare">
                 <span className="fa fa-facebook"></span> Share on Facebook
               </a>
             </FacebookButton>
             <br/>
             <TwitterButton element={"i"} url={url}>
-              <a className="btn btn-block btn-social btn-info">
+              <a className="btn btn-block btn-social btn-info" id="twitterShare">
                 <span className="fa fa-twitter"></span> Share on Twitter
               </a>
             </TwitterButton>

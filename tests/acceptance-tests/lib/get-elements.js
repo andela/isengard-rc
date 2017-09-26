@@ -12,6 +12,12 @@ module.exports = {
     }, ele);
     return grabElement;
   },
+  getProduct: function (className) {
+    const grabElement = browser.execute(function (elem) {
+      return document.querySelectorAll(elem);
+    }, className);
+    return grabElement;
+  },
   retId: function (element) {
     return this.getElementById(element).value;
   }
