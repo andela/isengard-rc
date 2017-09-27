@@ -5,14 +5,30 @@ module.exports = {
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   },
   getElementById: function (ele) {
-    const grabElement = browser.execute(function (ele) {
-      const elementStr = ele;
+    const grabElement = browser.execute(function (elem) {
+      const elementStr = elem;
       const elementId = '[id^="' + elementStr + '-"]';
       return "#" + document.querySelector(elementId).id;
     }, ele);
     return grabElement;
   },
+  getElemById: function (ele) {
+    const grabElement = browser.execute(function (elem) {
+      return document.querySelector(elem).id;
+    }, ele);
+    return grabElement;
+  },
   retId: function (element) {
     return this.getElementById(element).value;
+  },
+  customGetElementById: function (ele) {
+    const grabElement = browser.execute(function (elem) {
+      const elementStr = elem;
+      return "#" + elementStr;
+    }, ele);
+    return grabElement;
+  },
+  customRetId: function (element) {
+    return this.customGetElementById(element).value;
   }
 };
