@@ -2,6 +2,8 @@ login_dropdown_btn: "[data-event-action='accounts-dropdown-click']"
 login_email_fld: "[class='form-control login-input-email']"
 login_pw_fld: "[class='form-control login-input-password']"
 login_btn: "[data-event-action='submitSignInForm']"
+register_lnk: "[data-event-action='signUp']"
+register_btn: "[data-event-action='register']"
 
 register_dropdown_btn: "[data-event-action='accounts-dropdown-click']"
 register_form: "[data-event-action='signUp']"
@@ -105,3 +107,7 @@ thank_you_txt: "h3 > span"
 quick_tour: "[class='rui font-icon fa fa-plane']"
 quick_tour_next: "[class='introjs-button introjs-nextbutton']"
 quick_tour_done: "[class='introjs-button introjs-skipbutton introjs-donebutton']"
+
+#cart
+select_red: "//button/span[text()='Red']"
+select_green: "//button/span[text()='Green']"

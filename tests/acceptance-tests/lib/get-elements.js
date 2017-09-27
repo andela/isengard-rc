@@ -24,7 +24,6 @@ module.exports = {
   customGetElementById: function (ele) {
     const grabElement = browser.execute(function (elem) {
       const elementStr = elem;
-      // const elementId = '[id^="' + elementStr + '"]';
       return "#" + elementStr;
     }, ele);
     return grabElement;

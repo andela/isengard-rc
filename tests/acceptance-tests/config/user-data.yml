@@ -2,8 +2,8 @@ admin_user: Admin
 admin_email: 5ujnhdrz@localhost
 admin_pw: qk7Jgkvo
 
-guest_email: "tomiak@name.com"
-guest_pw: tomiak
+guest_email: "tomi_akande03@name.com"
+guest_pw: "123456789"
 
 # shop address
 country: US
@@ -22,3 +22,9 @@ stripe_visa: 4000000000000077
 exp_month: 1
 exp_year: 2020
 cvv: 123
+
+#paystack payment info
+holder: Tomi Akande
+paystack_visa: 4084 0840 8408 4081
+paystack_exp: 01 / 20
+paystack_cvv: 408  
